@@ -10,9 +10,10 @@ minHeap: utilized in Dijkstra, Prim, and Kruskal algorithms.
 unionFind: supports cycle detection in Kruskal.
 AlgoTest.cpp, StructTest.cpp, GraphTest.cpp – Unit testing files for the algorithms, supporting structures, and the graph class.
 Algorithm Demonstrator – main.cpp
-A demonstration file that runs each algorithm on example graphs to illustrate how they function in practice.
+A demonstration file that runs each algorithm on example graphs to illustrate how they function in practice. 
 
 ✅ Test Coverage
+
 The project includes unit tests for:
 Core operations of the graph class
 All algorithm implementations: BFS, DFS, Dijkstra, Prim, Kruskal
@@ -22,6 +23,8 @@ AlgoTest.cpp
 StructTest.cpp
 GraphTest.cpp
 ---
+
+
 
 To run all tests run in bash:
 make test
