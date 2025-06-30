@@ -1,59 +1,46 @@
-# 📚 Graph Algorithms Project
+📊 Graph Algorithms – C++ Project
+This project presents a comprehensive implementation of fundamental graph algorithms, including BFS, DFS, Dijkstra, Prim, and Kruskal, alongside the core data structures required for their execution: Queue, Min Heap, and Union-Find. The graph is modeled as an undirected, weighted structure using adjacency lists.
 
-This project implements various graph algorithms like BFS, DFS, Dijkstra, Prim, and Kruskal,
-along with the necessary graph data structures, including Queue, minHeap, and unionFind. 
-These algorithms are designed to work with an undirected weighted graph represented by adjacency lists.
+🧱 Project Layout
+Graph.h / Graph.cpp – Defines the structure of the graph using adjacency lists.
+Algorithms.h / Algorithms.cpp – Contains the logic for all the implemented graph traversal and pathfinding algorithms.
+structures.h / structures.cpp – Houses the core utility data structures:
+Queue: used in BFS.
+minHeap: utilized in Dijkstra, Prim, and Kruskal algorithms.
+unionFind: supports cycle detection in Kruskal.
+AlgoTest.cpp, StructTest.cpp, GraphTest.cpp – Unit testing files for the algorithms, supporting structures, and the graph class.
+Algorithm Demonstrator – main.cpp
+A demonstration file that runs each algorithm on example graphs to illustrate how they function in practice.
 
+✅ Test Coverage
+The project includes unit tests for:
+Core operations of the graph class
+All algorithm implementations: BFS, DFS, Dijkstra, Prim, Kruskal
+Supporting structures: Queue, MinHeap, Union-Find
+Tests are implemented in:
+AlgoTest.cpp
+StructTest.cpp
+GraphTest.cpp
 ---
 
-## 🏗️ Project Structure
-
-- `Graph.h/cpp` – Represents the graph using adjacency lists.
-- `Algorithms.h/cpp` – Implements algorithms: BFS, DFS, Dijkstra, Prim, Kruskal.
-- `structures.h/cpp` – Contains supporting data structures:
-- `Queue` – For BFS traversal.
-- `minHeap` – For Dijkstra, Prim, and Kruskal.
-- `unionFind` – For Kruskal's cycle detection.
-- `AlgoTest.cpp, StructTest.cpp, GraphTest.cpp`-Unit tests for algorithms,
-data structures, and the graph implementation.
-
----
-
-## Algorithm Demonstrator-main.cpp
-This file contains example runs of all the graph algorithms implemented in the project.
-It's used to showcase how each algorithm behaves on sample graphs.
-
-## 🧪 Testing Coverage
-This project includes unit tests for:
-- Graph class operations
-- Algorithms (BFS, DFS, Dijkstra,Prim,Kruskal)
-- Data structures (Queue, minHeap, unionFind)
-
-Tests are located in:
-- `AlgoTest.cpp`
-- `StructTest.cpp`
-- `GraphTest.cpp`
-
-### Run the tests with:
- make test
-
-
-### 🔨 Compile the project
+To run all tests run in bash:
+make test
+🛠️ Build Instructions
+To compile the full project, run in bash:
 make Main
-
-### ▶️ Run the main program (executes all algorithms)
+To execute the main demo program:
 ./main
 
-### 🧼 Check for memory leaks
+🧹 Memory Management
+To check for memory leaks using Valgrind:
 make valgrind
 
+ℹ️ Notes
+All algorithm implementations are encapsulated within the graph namespace.
+The project avoids usage of the C++ STL containers intentionally for educational purposes.
+Designed and tested for use in Linux environments (e.g., Ubuntu).
 
-## Notes
-- All algorithms are implemented under the graph namespace.
-- STL containers are intentionally not used.
-- Designed to run on Linux environments (Ubuntu).
 
-#### 👩‍💻 Author
-- Eden Hassin
-- Edenhassin@gmail.com
-- Project completed: March–April 2025
+👩‍💻 Author
+- Maayan Cohen Yemini
+- Maayanyemini123@gmail.com
